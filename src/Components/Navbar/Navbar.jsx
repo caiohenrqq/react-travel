@@ -1,11 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {SiConsul} from 'react-icons/si'
 import {BsPhoneVibrate} from 'react-icons/bs'
 import {AiOutlineGlobal} from 'react-icons/ai'
 import {CgMenuGridO} from 'react-icons/cg'
-import { IoMdClose } from "react-icons/io";
-
+import { IoMdClose } from 'react-icons/io'
+import Contato from '../Navbar/Contato.jsx'
 import logo from '../assets/jiturlg.png'
+import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
   const [active, setActive] = useState('navBarMenu');
@@ -24,6 +25,21 @@ const Navbar = () => {
     setActive('navBarMenu'); // Esconde a barra de navegação
     setIsNavBarShown(false); // Reseta o ícone para o estado inicial
   };
+
+  // Verifica se é Mobile (768px)
+
+  const isMobile = useMediaQuery({query: '(max-width: 768px)'});
+  
+  let mobile = 'contatoMobile';
+  let web = 'contatoWeb'
+
+  if (isMobile) { 
+    mobile = 'contatoMobile'
+    web = 'contatoWeb none'
+  } else {
+    web = 'contatoWeb'
+    mobile = 'contatoMobile none'
+  }
 
   return (
     <div className='navBar flex'>
@@ -56,11 +72,15 @@ const Navbar = () => {
             <li onClick={removeNavBar} className="listItem">Assentos</li>
             <li onClick={removeNavBar} className="listItem">Destinos</li>
           </ul>
-
-          <button onClick={removeNavBar} className='btn flex btnContato'>
-            Contato
-          </button>
+          <div className={mobile}>
+            <Contato />
+          </div>
         </div>
+
+        <div className={web}>
+          <Contato />
+        </div>
+        
 
         <button className='btn flex btnDois'>
           Contato

@@ -148,6 +148,9 @@ h2 {
   position: fixed;
   transition: 0.3s ease-in-out;
 }
+.navBar .navBarTwo ul {
+  gap: 2rem;
+}
 .navBar .navBarTwo .logoDiv .logo {
   width: 20%;
 }

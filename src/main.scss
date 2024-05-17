@@ -131,6 +131,7 @@ h2 {
     padding: 1rem;
     width: 100%;
   }
+  
   .navBarOne {
     background: var(--corSecundaria);
 
@@ -162,6 +163,10 @@ h2 {
     padding: 1.5rem 1rem;
     position: fixed;
     transition: .3s ease-in-out;
+
+    ul { // Itens da navbar
+      gap: 2rem;
+    }
 
     .logoDiv {
       .logo {
