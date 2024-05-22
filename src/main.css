@@ -9,7 +9,7 @@
 :root {
   --corPrimaria: hsl(225, 50%, 48%);
   --corSecundaria: hsl(180, 17%, 95%);
-  --corUm: hsl(15,74%, 70%);
+  --corUm: hsl(15, 74%, 70%);
   --corDois: hsl(28, 100%, 82%);
   --corHover: hsl(225, 56%, 59%);
   --corBranca: hsl(48, 60%, 98%);
@@ -20,8 +20,8 @@
   --cinzaBg: hsl(0, 0%, 96%);
   --cinzaTexto: rgb(145, 145, 145);
   --corInput: hsl(330, 12%, 97%);
-  --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05);
-  --transition: .4s ease-in-out;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05);
+  --transition: 0.4s ease-in-out;
 }
 
 body {
@@ -82,7 +82,8 @@ li {
   background: var(--corHover);
 }
 
-img, video {
+img,
+video {
   width: 100%;
   height: auto;
 }
@@ -116,7 +117,8 @@ h2 {
   width: 100%;
   z-index: 1000;
 }
-.navBar .navBarOne, .navBar .navBarTwo {
+.navBar .navBarOne,
+.navBar .navBarTwo {
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
@@ -200,6 +202,11 @@ h2 {
   right: 50%;
   transition: 0.5s ease-in-out;
 }
+.navBar .navBarBg {
+  background: var(--corSecundaria);
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 
 .home {
   padding-top: 10rem;
@@ -231,4 +238,75 @@ h2 {
   position: absolute;
   width: 90%;
   top: 11%;
+}
+
+.search .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--cinzaBg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.search .sectionContainer .btns {
+  background: var(--corSecundaria);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 4.5rem;
+}
+.search .sectionContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.search .sectionContainer .btns .singleBtn:hover {
+  background: var(--corPrimaria);
+  color: var(--corBranca);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.search .sectionContainer .btns .active {
+  background: var(--corPrimaria);
+  color: var(--corBranca);
+  font-weight: 500;
+}
+.search .sectionContainer .searchInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--corSecundaria);
+  margin-right: 1rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+  color: var(--corPreta);
+  opacity: 0.7;
+}
+.search .sectionContainer .searchInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--corPreta);
+  font-weight: 700;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

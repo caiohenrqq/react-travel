@@ -1,5 +1,5 @@
 // Font Setup | Inter
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 //
 
@@ -7,13 +7,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
   --corPrimaria: hsl(225, 50%, 48%);
   --corSecundaria: hsl(180, 17%, 95%);
-  --corUm: hsl(15,74%, 70%);
+  --corUm: hsl(15, 74%, 70%);
   --corDois: hsl(28, 100%, 82%);
   --corHover: hsl(225, 56%, 59%);
   --corBranca: hsl(48, 60%, 98%);
@@ -24,8 +24,8 @@
   --cinzaBg: hsl(0, 0%, 96%);
   --cinzaTexto: rgb(145, 145, 145);
   --corInput: hsl(330, 12%, 97%);
-  --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05);
-  --transition: .4s ease-in-out;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05);
+  --transition: 0.4s ease-in-out;
 }
 
 // Default Style
@@ -72,7 +72,7 @@ li {
 }
 
 .btn {
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   background: var(--corPrimaria);
   border: none;
   outline: none;
@@ -90,7 +90,8 @@ li {
   }
 }
 
-img, video {
+img,
+video {
   width: 100%;
   height: auto;
 }
@@ -126,12 +127,13 @@ h2 {
   width: 100%;
   z-index: 1000;
 
-  .navBarOne, .navBarTwo {
+  .navBarOne,
+  .navBarTwo {
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
   }
-  
+
   .navBarOne {
     background: var(--corSecundaria);
 
@@ -139,7 +141,7 @@ h2 {
       color: var(--corPrimaria);
     }
 
-    .atb{
+    .atb {
       gap: 1rem;
 
       span {
@@ -162,9 +164,10 @@ h2 {
     top: 3rem;
     padding: 1.5rem 1rem;
     position: fixed;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 
-    ul { // Itens da navbar
+    ul {
+      // Itens da navbar
       gap: 2rem;
     }
 
@@ -173,13 +176,12 @@ h2 {
         width: 20%;
       }
     }
-    
-    @media screen and (max-width: 768px) {
 
+    @media screen and (max-width: 768px) {
       .toggleIcon {
         display: inline;
       }
-      
+
       .navBarMenu {
         position: absolute;
         background: var(--corSecundaria);
@@ -190,17 +192,18 @@ h2 {
         width: 80%;
         transform: translateX(50%);
         z-index: 2000;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
         border: 3px solid var(--corBranca);
-        transition: .4s ease-in-out;
+        transition: 0.4s ease-in-out;
 
         .menu {
           flex-direction: column;
-          gap: .5rem;
+          gap: 0.5rem;
           text-align: center;
 
-          .listItem{
-            padding: .5rem 0;
+          .listItem {
+            padding: 0.5rem 0;
             cursor: pointer;
             color: var(--corPreta);
           }
@@ -227,8 +230,14 @@ h2 {
 
     .showNavBar {
       right: 50%;
-      transition: .5s ease-in-out;
+      transition: 0.5s ease-in-out;
     }
+  }
+
+  .navBarBg {
+    background: var(--corSecundaria);
+    padding: .5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 }
 
@@ -239,7 +248,7 @@ h2 {
   text-align: center;
   gap: 2rem;
   flex-direction: column;
-  
+
   .mainText {
     color: var(--corPreta);
     font-weight: 700;
@@ -270,3 +279,88 @@ h2 {
     }
   }
 }
+
+// Search Section
+
+.search {
+  .sectionContainer {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid var(--cinzaBg);
+    border-radius: 16px;
+    row-gap: 2rem;
+
+    .btns {
+      background: var(--corSecundaria);
+      padding: .5rem;
+      border-radius: 1rem;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 4.5rem;
+
+      .singleBtn {
+        padding: .8rem 1.5rem;
+        font-size: 13px;
+        border-radius: 3rem;
+        width: 80%;
+        text-align: center;
+
+        &:hover {
+          background: var(--corPrimaria);
+          color: var(--corBranca);
+          font-weight: 500;
+          transition: .4s ease;
+        }
+      }
+
+      .active {
+        background: var(--corPrimaria);
+        color: var(--corBranca);
+        font-weight: 500;
+      }
+    }
+    .searchInputs {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .singleInput {
+        .iconDiv {
+          padding: 16px 10px;
+          border-radius: 3rem;
+          background: var(--corSecundaria);
+          margin-right: 1rem;
+
+          .icon {
+            color: var(--corPreta);
+            opacity: .7;
+          }
+        }
+
+        .texts {
+          h4 {
+            padding-top: 0;
+            padding-bottom: .7rem;
+            color: var(--corPreta);
+            font-weight: 700;
+          }
+
+          input {
+            width: 95%;
+            border: none;
+            outline: none;
+            background: transparent;
+            
+            &::placeholder {
+              font-size: 12px;
+              opacity: .5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
