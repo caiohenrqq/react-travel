@@ -1,36 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { RxCalendar } from "react-icons/rx";
 
 const Search = () => {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleClick = (buttonName) => {
+    if (activeButton === buttonName) {
+      setActiveButton(null); // Desativa se já estiver ativo
+    } else {
+      setActiveButton(buttonName); // Ativa o botão clicado
+    }
+  };
+
   return (
     <div className="search container section">
       <div className="sectionContainer">
-
         <div className="btns flex">
-          <div className="singleBtn">
+          <div 
+            className={`singleBtn ${activeButton === 'economica' ? 'active' : ''}`} 
+            onClick={() => handleClick('economica')}
+          >
             <span>Econômica</span>
           </div>
 
-          {/* <div className="singleBtn">
-            <span>Business Class</span>
-          </div> */}
-
-          <div className="singleBtn">
+          <div 
+            className={`singleBtn ${activeButton === 'primeira' ? 'active' : ''}`} 
+            onClick={() => handleClick('primeira')}
+          >
             <span>Primeira Classe</span>
           </div>
         </div>
 
         <div className="searchInputs flex">
-          {/* Single Input */}
           <div className="singleInput flex">
             <div className="iconDiv">
               <HiOutlineLocationMarker className="icon" />
             </div>
             <div className="texts">
               <h4>Localização</h4>
-              <input type="text" placeholder="Where do you want to go?" />
+              <input type="text" placeholder="Pra onde você quer ir?" />
             </div>
           </div>
 
@@ -40,7 +50,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Passageiros</h4>
-              <input type="text" placeholder="Add guests" />
+              <input type="text" placeholder="Quantos passageiros irão?" />
             </div>
           </div>
 
@@ -50,7 +60,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Check-in</h4>
-              <input type="text" placeholder="Add date" />
+              <input type="text" placeholder="Qual sua data de ida?" />
             </div>
           </div>
 
@@ -60,12 +70,11 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Check-out</h4>
-              <input type="text" placeholder="Add date" />
+              <input type="text" placeholder="Qual sua data de volta?" />
             </div>
           </div>
 
-          <button className="btn btnBlock flex">Search Flight</button>
-
+          <button className="btn btnBlock flex">Procurar Passagens</button>
         </div>
       </div>
     </div>

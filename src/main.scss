@@ -292,34 +292,36 @@ h2 {
 
     .btns {
       background: var(--corSecundaria);
-      padding: .5rem;
+      padding: 0.5rem;
       border-radius: 1rem;
       flex-direction: column;
       width: 100%;
       margin: auto;
       margin-bottom: 4.5rem;
-
+    
       .singleBtn {
-        padding: .8rem 1.5rem;
+        padding: 0.8rem 1.5rem;
         font-size: 13px;
         border-radius: 3rem;
         width: 80%;
         text-align: center;
-
+        cursor: pointer;
+    
         &:hover {
           background: var(--corPrimaria);
           color: var(--corBranca);
           font-weight: 500;
-          transition: .4s ease;
+          transition: 0.4s ease;
         }
       }
-
+    
       .active {
         background: var(--corPrimaria);
         color: var(--corBranca);
         font-weight: 500;
       }
     }
+        
     .searchInputs {
       width: 100%;
       justify-content: center;
@@ -359,6 +361,20 @@ h2 {
             }
           }
         }
+      }
+    }
+  }
+}
+
+// Support Section
+
+.support {
+  .sectionContainer {
+    .titlesDiv {
+      text-align: center;
+      small {
+        letter-spacing: .6rem;
+        text-transform: uppercase;
       }
     }
   }

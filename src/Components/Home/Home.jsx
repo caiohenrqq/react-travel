@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className='home flex container'>
       <div className="mainText">
-        <h1>Create Ever-lasting Memories With Us</h1>
+        <h1>Crie Memórias Inesquecíveis Que Durarão Para Sempre!</h1>
       </div>
 
       <div className='homeImagens flex'>
