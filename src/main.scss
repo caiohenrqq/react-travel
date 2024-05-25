@@ -370,11 +370,113 @@ h2 {
 
 .support {
   .sectionContainer {
+    margin-top: -35px;
     .titlesDiv {
       text-align: center;
       small {
         letter-spacing: .6rem;
         text-transform: uppercase;
+        font-size: 13px;
+        color: var(--corPreta);
+        line-height: 1.5rem;
+      }
+    }
+
+    .infoDiv{
+      margin: 2rem;
+      gap: 1.5rem;
+
+      .textDiv {
+        gap: 1.5rem;
+
+        .singleInfo {
+          .number {
+            background: var(--corPrimaria);
+            padding: 5px 12px;
+            width: 40px;
+            border-radius: 3rem;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--corBranca);
+          }
+
+          p {
+            margin-bottom: 1rem;
+          }
+
+          .corUm {
+            background: var(--corUm);
+          }
+
+          .corDois {
+            background: var(--corDois);
+          }
+        }
+      }
+
+      .imgDiv {
+        margin: auto;
+        img {
+          width: 100%;
+          max-width: 420px;
+        }
+      }
+    }
+  }
+}
+
+// Info Section
+
+.info {
+  background-color: var(--corSecundaria);
+  .infoContainer {
+    .titleDiv {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+
+    .cardsDiv {
+      gap: 1.5rem;
+      margin-top: 3rem;
+
+      .singleCard {
+        background: var(--corBranca);
+        padding: 3rem 2rem;
+        border-radius: 10rem;
+        gap: 1rem;
+        text-align: center;
+        margin: auto;
+        height: 320px;
+        width: 90%;
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .cardContent {
+          .cardTitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .iconDiv {
+          justify-content: center;
+          margin: auto;
+          background-color: var(--corPrimaria);
+          width: max-content;
+          height: 55px;
+          padding: 1rem;
+          border-radius: 3rem;
+
+          .icon {
+            color: var(--corBranca);
+          }
+        }
       }
     }
   }

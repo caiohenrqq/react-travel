@@ -1,5 +1,5 @@
 import React from 'react'
-import aviao from '../../Components/assets/aviaoImg.svg'
+import aviaoPessoas from '../../Components/assets/aviaoPessoas.svg'
 
 const Support = () => {
   return (
@@ -13,7 +13,6 @@ const Support = () => {
 
         <div className="infoDiv">
           <div className="textDiv">
-
             <div className="singleInfo">
               <span className="number">01</span>
               <h4>Requisitos de Viagem</h4>
@@ -23,7 +22,7 @@ const Support = () => {
             </div>
 
             <div className="singleInfo">
-              <span className="number">02</span>
+              <span className="number corUm">02</span>
               <h4>Serviço de Motorista à sua Chegada</h4>
               <p>
                 Relaxe! Motorista profissional te espera no aeroporto, ajuda com bagagem e te leva ao destino com conforto e segurança.
@@ -31,7 +30,7 @@ const Support = () => {
             </div>
 
             <div className="singleInfo">
-              <span className="number">03</span>
+              <span className="number corDois">03</span>
               <h4>Seguro de Viagem Multirrisco</h4>
               <p>
                 Viaje tranquilo com nosso Seguro de Viagem Multirrisco, cobrindo saúde, bagagem, voos e emergências, garantindo proteção completa.
@@ -41,7 +40,7 @@ const Support = () => {
           </div>
 
           <div className="imgDiv">
-            <img src={aviao} alt="" />
+            <img src={aviaoPessoas} alt="" />
           </div>
         </div>
       </div>

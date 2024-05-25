@@ -312,10 +312,95 @@ h2 {
   opacity: 0.5;
 }
 
+.support .sectionContainer {
+  margin-top: -35px;
+}
 .support .sectionContainer .titlesDiv {
   text-align: center;
 }
 .support .sectionContainer .titlesDiv small {
   letter-spacing: 0.6rem;
   text-transform: uppercase;
+  font-size: 13px;
+  color: var(--corPreta);
+  line-height: 1.5rem;
+}
+.support .sectionContainer .infoDiv {
+  margin: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+  background: var(--corPrimaria);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--corBranca);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo p {
+  margin-bottom: 1rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .corUm {
+  background: var(--corUm);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .corDois {
+  background: var(--corDois);
+}
+.support .sectionContainer .infoDiv .imgDiv {
+  margin: auto;
+}
+.support .sectionContainer .infoDiv .imgDiv img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.info {
+  background-color: var(--corSecundaria);
+}
+.info .infoContainer .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.info .infoContainer .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .infoContainer .cardsDiv .singleCard {
+  background: var(--corBranca);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .infoContainer .cardsDiv .singleCard .cardContent .cardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info .infoContainer .cardsDiv .singleCard .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background-color: var(--corPrimaria);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info .infoContainer .cardsDiv .singleCard .iconDiv .icon {
+  color: var(--corBranca);
 }/*# sourceMappingURL=main.css.map */
