@@ -385,15 +385,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.info .infoContainer .cardsDiv .singleCard .cardContent .cardTitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2.5rem;
 }
 .info .infoContainer .cardsDiv .singleCard .iconDiv {
-  justify-content: center;
-  margin: auto;
+  margin-top: 2rem;
   background-color: var(--corPrimaria);
   width: -moz-max-content;
   width: max-content;
@@ -403,4 +398,17 @@ h2 {
 }
 .info .infoContainer .cardsDiv .singleCard .iconDiv .icon {
   color: var(--corBranca);
+}
+.info .infoContainer .cardsDiv .singleCard .cardTitle {
+  color: var(--corPreta);
+  font-weight: 700;
+}
+.info .infoContainer .cardsDiv .singleCard p {
+  margin: 1rem;
+}
+.info .infoContainer .cardsDiv .singleCard .corUm {
+  background: var(--corUm);
+}
+.info .infoContainer .cardsDiv .singleCard .corDois {
+  background: var(--corDois);
 }/*# sourceMappingURL=main.css.map */

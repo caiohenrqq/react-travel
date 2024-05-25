@@ -26,7 +26,7 @@ function Info() {
           </div>
 
           <div className="singleCard">
-            <div className="iconDiv flex">
+            <div className="iconDiv flex corUm">
               <BsShieldCheck className='icon'/>
             </div>
             <div className="cardContent">
@@ -36,7 +36,7 @@ function Info() {
           </div>
 
           <div className="singleCard">
-            <div className="iconDiv flex">
+            <div className="iconDiv flex corDois">
               <BsBookmarkCheck className='icon'/>
             </div>
             <div className="cardContent">

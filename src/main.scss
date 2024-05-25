@@ -455,18 +455,10 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2.5rem;
         
-        .cardContent {
-          .cardTitle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-        }
-
         .iconDiv {
-          justify-content: center;
-          margin: auto;
+          margin-top: 2rem;
           background-color: var(--corPrimaria);
           width: max-content;
           height: 55px;
@@ -476,6 +468,22 @@ h2 {
           .icon {
             color: var(--corBranca);
           }
+        }
+        .cardTitle {
+          color: var(--corPreta);
+          font-weight: 700;
+        }
+
+        p {
+          margin: 1rem;
+        }
+
+        .corUm {
+          background: var(--corUm);
+        }
+
+        .corDois {
+          background: var(--corDois);
         }
       }
     }
