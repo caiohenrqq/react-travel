@@ -411,4 +411,25 @@ h2 {
 }
 .info .infoContainer .cardsDiv .singleCard .corDois {
   background: var(--corDois);
+}
+
+.lounge .sectionContainer {
+  gap: 1rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+  max-width: 430px;
+}
+.lounge .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--corPreta);
+}
+.lounge .textDiv .grids .singleGrid p {
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

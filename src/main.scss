@@ -490,3 +490,36 @@ h2 {
   }
 }
 
+// Lounge Section
+
+.lounge {
+  .sectionContainer {
+    gap: 1rem;
+
+    .imgDiv {
+      margin: auto;
+      max-width: 430px;
+    }
+  }
+
+  .textDiv {
+    .grids {
+      margin-top: 1rem;
+      gap: 1.5rem;
+
+      .singleGrid {
+        .gridTitle {
+          display: block;
+          padding-bottom: .5rem;
+          font-weight: 500;
+          color: var(--corPreta);
+        }
+        
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
