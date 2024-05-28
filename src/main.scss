@@ -251,8 +251,22 @@ h2 {
 
   .icon {
     font-size: 30px;
+    margin-top: 1rem;
+    animation: ballonAnimation 2.3s infinite;
+
+    @keyframes ballonAnimation {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
   }
-  
+
   .mainText {
     color: var(--corPreta);
     font-weight: 700;
