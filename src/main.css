@@ -57,7 +57,7 @@ li {
 }
 
 .grid {
-  display: flex;
+  display: grid;
   align-items: center;
 }
 
@@ -213,6 +213,9 @@ h2 {
   text-align: center;
   gap: 2rem;
   flex-direction: column;
+}
+.home .icon {
+  font-size: 30px;
 }
 .home .mainText {
   color: var(--corPreta);
@@ -449,7 +452,7 @@ h2 {
   overflow: hidden;
   border-radius: 10rem;
   gap: 1rem;
-  border: 1px solid var(--cinzaTexto);
+  border: 2px solid var(--cinzaTexto);
   margin: auto;
   margin-bottom: 1.5rem;
 }
@@ -531,4 +534,113 @@ h2 {
 .travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
   bottom: 250px;
   transition: 1s ease-in-out;
+}
+
+.subscribe {
+  background: var(--corSecundaria);
+}
+.subscribe .sectionContainer {
+  text-align: center;
+}
+.subscribe .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--corBranca);
+  border-radius: 1rem;
+}
+.subscribe .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .sectionContainer .inputDiv input:placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
+}
+
+.footer {
+  background: var(--corSecundaria);
+}
+.footer .sectionContainer {
+  gap: 2.5rem;
+}
+.footer .sectionContainer .gridOne {
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+}
+.footer .sectionContainer .gridOne .logoDiv .logo {
+  width: 20%;
+}
+.footer .sectionContainer .gridOne .socialIcon {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer .sectionContainer .gridOne .socialIcon .icon {
+  height: 50px;
+  width: 30px;
+  border-radius: 10rem;
+  border-radius: 10rem;
+  border: 1px solid var(--corBorda);
+  box-shadow: var(--box-shadow);
+  padding: 0.4rem;
+  color: var(--cinzaTexto);
+}
+.footer .sectionContainer .gridOne .socialIcon .icon:hover {
+  background: var(--corPrimaria);
+  transform: translateY(-7px);
+  transition: var(--transition);
+  border: 1px solid var --corPrimaria;
+  color: var(--corBranca);
+}
+.footer .sectionContainer .footerLinks {
+  display: grid;
+}
+.footer .sectionContainer .footerLinks .linkTitle {
+  color: var(--corPreta);
+  font-weight: 500;
+  display: block;
+  padding-bottom: 1rem;
+}
+.footer .sectionContainer .footerLinks li a {
+  display: block;
+  color: var(--cinzaTexto);
+  transition: var(--transition);
+  padding: 0.3rem 0;
+}
+.footer .sectionContainer .footerLinks li a:hover {
+  transform: translateX(7px);
+  color: var(--corPrimaria);
+}
+.footer .copyRightDiv {
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-top: 1px solid var --cinzaTexto;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .home {
+    position: relative;
+    padding-top: 12rem;
+  }
+  .home .homeImagens {
+    width: 40%;
+  }
+  .search .sectionContainer .btns {
+    width: 15rem;
+  }
+  .search .sectionContainer .searchInputs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .search .sectionContainer .searchInputs button {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

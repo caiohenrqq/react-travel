@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaLongArrowAltDown } from "react-icons/fa";
 // Assets
 import video from '../assets/horizon.mp4'
 import aviao from '../assets/aviao.png'
@@ -9,6 +9,7 @@ const Home = () => {
     <div className='home flex container'>
       <div className="mainText">
         <h1>Crie Memórias Inesquecíveis Que Durarão Para Sempre!</h1>
+        <FaLongArrowAltDown className='icon'/>
       </div>
 
       <div className='homeImagens flex'>

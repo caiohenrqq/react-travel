@@ -17,21 +17,21 @@ const Search = () => {
   return (
     <div className="search container section">
       <div className="sectionContainer">
-        <div className="btns flex">
+        {/* <div className="btns flex">
           <div 
             className={`singleBtn ${activeButton === 'economica' ? 'active' : ''}`} 
             onClick={() => handleClick('economica')}
           >
-            <span>Econômica</span>
+            <span>Ônibus</span>
           </div>
 
           <div 
             className={`singleBtn ${activeButton === 'primeira' ? 'active' : ''}`} 
             onClick={() => handleClick('primeira')}
           >
-            <span>Primeira Classe</span>
+            <span>Avião</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="searchInputs flex">
           <div className="singleInput flex">
