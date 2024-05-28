@@ -544,6 +544,7 @@ h2 {
 // Travelers Section
 
 .travelers {
+  background-color: var(--cinzaBg);
   .sectionContainer {
     text-align: center;
 
@@ -659,7 +660,8 @@ h2 {
 // Subscribe Section
 
 .subscribe {
-  background: var(--corSecundaria);
+  background: var(--corBranca);
+  margin: 1rem;
 
   .sectionContainer {
     text-align: center;
@@ -692,6 +694,7 @@ h2 {
 
 .footer {
   background: var(--corSecundaria);
+  padding-top: 1rem;
   .sectionContainer {
     gap: 2.5rem;
 

@@ -450,6 +450,9 @@ h2 {
   padding-bottom: 1rem;
 }
 
+.travelers {
+  background-color: var(--cinzaBg);
+}
 .travelers .sectionContainer {
   text-align: center;
 }
@@ -550,7 +553,8 @@ h2 {
 }
 
 .subscribe {
-  background: var(--corSecundaria);
+  background: var(--corBranca);
+  margin: 1rem;
 }
 .subscribe .sectionContainer {
   text-align: center;
@@ -577,6 +581,7 @@ h2 {
 
 .footer {
   background: var(--corSecundaria);
+  padding-top: 1rem;
 }
 .footer .sectionContainer {
   gap: 2.5rem;
