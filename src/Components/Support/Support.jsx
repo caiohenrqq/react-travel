@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import aviaoPessoas from '../../Components/assets/aviaoPessoas.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Support = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <div className='support container section'>
       <div className='sectionContainer'>
@@ -13,7 +20,7 @@ const Support = () => {
 
         <div className="infoDiv">
           <div className="textDiv">
-            <div className="singleInfo">
+            <div data-aos="fade-down" data-aos-duration="2500" className="singleInfo">
               <span className="number">01</span>
               <h4>Requisitos de Viagem</h4>
               <p>
@@ -21,7 +28,7 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="singleInfo">
+            <div data-aos="fade-down" data-aos-duration="3500" className="singleInfo">
               <span className="number corUm">02</span>
               <h4>Serviço de Motorista à sua Chegada</h4>
               <p>
@@ -29,7 +36,7 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="singleInfo">
+            <div data-aos="fade-down" data-aos-duration="4500" className="singleInfo">
               <span className="number corDois">03</span>
               <h4>Seguro de Viagem Multirrisco</h4>
               <p>
@@ -39,7 +46,7 @@ const Support = () => {
 
           </div>
 
-          <div className="imgDiv">
+          <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
             <img src={aviaoPessoas} alt="" />
           </div>
         </div>

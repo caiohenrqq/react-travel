@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { RxCalendar } from "react-icons/rx";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Search = () => {
+
+  
   const [activeButton, setActiveButton] = useState(null);
 
   const handleClick = (buttonName) => {
@@ -14,8 +19,14 @@ const Search = () => {
     }
   };
 
+    // UseEffect para setar animação
+    useEffect(() => {
+      AOS.init({duration: 2000})
+    }, [])
+
+
   return (
-    <div className="search container section">
+    <div data-aos="fade-up" data-aos-duration="2500" className="search container section">
       <div className="sectionContainer">
         {/* <div className="btns flex">
           <div 
