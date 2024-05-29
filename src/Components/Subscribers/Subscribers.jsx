@@ -4,11 +4,11 @@ function Subscribers() {
   return (
     <div className='subscribe section'>
       <div className="sectionContainer container">
-        <h2>Subscribe Newsletters & get Latest News</h2>
+        <h2>Inscreva-se em Newsletters e receba as Últimas Ofertas!</h2>
         <div className="inputDiv flex">
-          <input type="text" placeholder='Enter your email adress' />
+          <input type="text" placeholder='Insira seu e-mail' />
           <button className='btn'>
-            Subscribe
+            Inscreva-se
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ function Info() {
     <div className='info section'>
       <div className="infoContainer container">
         <div className="titleDiv flex">
-          <h2>Viagens para fazer memórias ao redor do mundo</h2>
+          <h2>Viagens para fazer memórias ao redor do mundo!</h2>
           <button className='btn'>
             Explorar
           </button>
@@ -20,8 +20,8 @@ function Info() {
               <RxCalendar className='icon'/>
             </div>
             <div className="cardContent">
-              <span className="cardTitle">Book & Relax</span>
-              <p>You can also call airlines from your phone and book a flight ticket!</p>
+              <span className="cardTitle">Reserve & Relaxe</span>
+              <p>A viagem dos seus sonhos começa aqui! Encontre os melhores destinos e aproveite momentos inesquecíveis. 🌴✈️</p>
             </div>
           </div>
 
@@ -30,8 +30,8 @@ function Info() {
               <BsShieldCheck className='icon'/>
             </div>
             <div className="cardContent">
-              <span className="cardTitle">Smart Checklist</span>
-              <p>You can also call airlines from your phone and book a flight ticket!</p>
+              <span className="cardTitle">Lista Inteligente</span>
+              <p>Planeje sua aventura perfeita com dicas exclusivas, destinos surpreendentes e experiências memoráveis! 🌍✨</p>
             </div>
           </div>
 
@@ -40,8 +40,8 @@ function Info() {
               <BsBookmarkCheck className='icon'/>
             </div>
             <div className="cardContent">
-              <span className="cardTitle">Save More</span>
-              <p>You can also call airlines from your phone and book a flight ticket!</p>
+              <span className="cardTitle">Economize Mais</span>
+              <p>Descubra destinos incríveis e ofertas imperdíveis para uma viagem inesquecível sem gastar muito!  ✈️💰</p>
             </div>
           </div>
         </div>

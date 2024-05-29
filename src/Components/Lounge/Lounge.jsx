@@ -10,42 +10,42 @@ const Lounge = () => {
         </div>
 
         <div className="textDiv">
-          <h2>Unaccompanied Minor Lounge</h2>
+          <h2>Assistência no Aeroporto</h2>
 
           <div className="grids grids">
           <div className="singleGrid">
             <span className="gridTitle">
-              Help through the airpot
+              Check-in Assistido
             </span>
             <p>
-              Yu can also call airlines from your phone and book a flight ticket to one of your favorite destinations.
+            Deixe-nos cuidar de todo o processo de check-in para você, garantindo uma experiência sem estresse desde o início da sua jornada.
             </p>
           </div>
 
           <div className="singleGrid">
             <span className="gridTitle">
-              Help through the airpot
+              Lounge Exclusivo
             </span>
             <p>
-              Yu can also call airlines from your phone and book a flight ticket to one of your favorite destinations.
+              Relaxe e desfrute de nosso lounge exclusivo, com comodidades premium, enquanto aguarda seu voo, proporcionando conforto e conveniência incomparáveis.
             </p>
           </div>
 
           <div className="singleGrid">
             <span className="gridTitle">
-              Help through the airpot
+              Acompanhamento Personalizado
             </span>
             <p>
-              Yu can also call airlines from your phone and book a flight ticket to one of your favorite destinations.
+              Nossa equipe altamente treinada estará ao seu lado em cada etapa do caminho, fornecendo assistência personalizada para garantir que sua viagem seja suave e tranquila.
             </p>
           </div>
 
           <div className="singleGrid">
             <span className="gridTitle">
-              Help through the airpot
+              Transferência Confortável
             </span>
             <p>
-              Yu can also call airlines from your phone and book a flight ticket to one of your favorite destinations.
+              Faça sua transferência entre voos de forma tranquila e sem complicações, enquanto cuidamos de todos os detalhes para garantir sua chegada confortável ao destino final.
             </p>
           </div>
 

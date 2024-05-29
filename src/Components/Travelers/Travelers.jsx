@@ -15,29 +15,33 @@ const travelers = [
     id: 1,
     bgPessoa: pessoa1bg,
     imgPessoa: pessoa1,
-    nomePessoa: 'Nome',
-    socialPessoa: '@Redes'
+    nomePessoa: 'Lucia Oliveira',
+    socialPessoa: '@lucia_traveler',
+    avaliacao: 'Jitur superou todas as expectativas! Atendimento impecável e roteiros incríveis. Voltarei com certeza! Gratidão.'
   },
   {
     id: 2,
     bgPessoa: pessoa2bg,
     imgPessoa: pessoa2,
-    nomePessoa: 'Nome2',
-    socialPessoa: '@Redes'
+    nomePessoa: 'Pedro Silva',
+    socialPessoa: '@pedrosilva_adventures',
+    avaliacao: 'Experiência única com a Jitur! Profissionalismo, qualidade e momentos inesquecíveis. Recomendo a todos os viajantes!'
   },
   {
     id: 3,
     bgPessoa: pessoa3bg,
     imgPessoa: pessoa3,
-    nomePessoa: 'Nome3',
-    socialPessoa: '@Redes'
+    nomePessoa: 'Rafaela Lima',
+    socialPessoa: '@rafa.lima_explorer',
+    avaliacao: 'Jitur fez minha viagem perfeita! Serviço de primeira classe e destinos paradisíacos. Muito obrigada pelo cuidado!'
   },
   {
     id: 4,
     bgPessoa: pessoa4bg,
     imgPessoa: pessoa4,
-    nomePessoa: 'Nome4',
-    socialPessoa: '@Redes'
+    nomePessoa: 'Marcos Costa',
+    socialPessoa: '@marcoscosta_wanderlust',
+    avaliacao: 'Jitur é simplesmente incrível! Roteiros personalizados, suporte excepcional e memórias que durarão para sempre. Obrigada por tudo!'
   }
 ]
 
@@ -54,7 +58,7 @@ function Travelers() {
           {/* Card Passageiro */}
 
             {
-              travelers.map(({id, bgPessoa, imgPessoa, nomePessoa, socialPessoa})=>{
+              travelers.map(({id, bgPessoa, imgPessoa, nomePessoa, socialPessoa, avaliacao})=>{
                   return(
                     <div key={id} className="singleTraveler">
 
@@ -67,7 +71,7 @@ function Travelers() {
                       <div className="travelerName">
                         <span>{nomePessoa}</span>
                         <p>{socialPessoa}</p>
-                        <p className='avaliacao'>Fantástica experiência com a Jitur! O país oferece paisagens deslumbrantes, cultura vibrante e hospitalidade calorosa.</p>
+                        <p className='avaliacao'>{avaliacao}</p>
                       </div>
                     </div>
         

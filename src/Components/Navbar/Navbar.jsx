@@ -55,7 +55,7 @@ window.addEventListener('scroll', addBgColor)
 
   return (
     <div className='navBar flex'>
-      <div className="navBarOne flex">
+      {/* <div className="navBarOne flex">
         <div>
           <SiConsul className='icon'/>
         </div>
@@ -69,7 +69,7 @@ window.addEventListener('scroll', addBgColor)
           <span>Logar</span>
           <span>Registrar</span>
         </div>
-      </div>
+      </div> */}
 
       <div className={noBg}>
         <div className="logoDiv">

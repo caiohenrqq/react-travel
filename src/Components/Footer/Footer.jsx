@@ -12,7 +12,7 @@ function Footer() {
           <div className="logoDiv">
             <img src={logo} className='logo' />
           </div>
-          <p>Sua mente deve ser mais forte que seus sentimentos, voe!</p>
+          <p>A sua agência de viagens! </p>
           <div className="socialIcon flex">
           <TiSocialFacebook className='icon' />
           <AiOutlineTwitter className='icon' />
@@ -22,73 +22,31 @@ function Footer() {
 
         <div className="footerLinks">
           <span className="linkTitle">
-            Information
+            Informação
           </span>
           <li>
-            <a href="">Home</a>
+            <a href="">Início</a>
           </li>
           <li>
-            <a href="">Explore</a>
+            <a href="">Suporte</a>
           </li>
           <li>
-            <a href="">Flight Status</a>
+            <a href="">Viagens</a>
           </li>
           <li>
-            <a href="">Travel</a>
-          </li>
-          <li>
-            <a href="">Check-in</a>
-          </li>
-          <li>
-            <a href="">Check-out</a>
+            <a href="">Assistência</a>
           </li>
         </div>
 
         <div className="footerLinks">
           <span className="linkTitle">
-            Quick Guide
+            Guia Rápido
           </span>
           <li>
             <a href="">FAQ</a>
           </li>
           <li>
-            <a href="">How To</a>
-          </li>
-          <li>
-            <a href="">Features</a>
-          </li>
-          <li>
-            <a href="">Baggage</a>
-          </li>
-          <li>
-            <a href="">Route Map</a>
-          </li>
-          <li>
-            <a href="">Manage your booking</a>
-          </li>
-        </div>
-
-        <div className="footerLinks">
-          <span className="linkTitle">
-            Information
-          </span>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Explore</a>
-          </li>
-          <li>
-            <a href="">Flight Status</a>
-          </li>
-          <li>
-            <a href="">Travel</a>
-          </li>
-          <li>
-            <a href="">Check-in</a>
-          </li>
-          <li>
-            <a href="">Check-out</a>
+            <a href="">Suporte</a>
           </li>
         </div>
       </div>
