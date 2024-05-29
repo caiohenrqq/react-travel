@@ -73,6 +73,7 @@ li {
 
 .btn {
   padding: 0.7rem 1.5rem;
+  overflow-x: hidden;
   background: var(--corPrimaria);
   border: none;
   outline: none;
@@ -366,6 +367,7 @@ h2 {
 // Support Section
 
 .support {
+  overflow-x: hidden;
   .sectionContainer {
     margin-top: -35px;
     .titlesDiv {
@@ -674,6 +676,7 @@ h2 {
 // Footer Section
 
 .footer {
+  overflow-x: hidden;
   background: var(--corSecundaria);
   padding-top: 2rem;
   .sectionContainer {
@@ -771,8 +774,6 @@ h2 {
 }
 
 @media screen and (min-width: 1080px) {
-  // Home Section
-
 
   // Search Section
   .search {

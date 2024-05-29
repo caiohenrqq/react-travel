@@ -67,6 +67,7 @@ li {
 
 .btn {
   padding: 0.7rem 1.5rem;
+  overflow-x: hidden;
   background: var(--corPrimaria);
   border: none;
   outline: none;
@@ -309,6 +310,9 @@ h2 {
   opacity: 0.5;
 }
 
+.support {
+  overflow-x: hidden;
+}
 .support .sectionContainer {
   margin-top: -35px;
 }
@@ -563,6 +567,7 @@ h2 {
 }
 
 .footer {
+  overflow-x: hidden;
   background: var(--corSecundaria);
   padding-top: 2rem;
 }
