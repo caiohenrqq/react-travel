@@ -5,7 +5,7 @@ function Subscribers() {
     <div className='subscribe section'>
       <div className="sectionContainer container">
         <h2>Inscreva-se em Newsletters e receba as Últimas Ofertas!</h2>
-        <div className="inputDiv flex">
+        <div className="inputDiv">
           <input type="text" placeholder='Insira seu e-mail' />
           <button className='btn'>
             Inscreva-se

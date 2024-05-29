@@ -770,8 +770,30 @@ h2 {
 }
 
 // Media Screen Section
+@media screen and (min-width: 570px) {
 
-@media screen and (min-width: 480px) {
+  // Home Section
+  .home {
+    padding-top: 12rem;
+  }
+
+  // Support Section
+  .support {
+    .sectionContainer {
+        .infoDiv {
+          .imgDiv {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+          }
+        }
+      }
+    }
+
+  
+}
+
+@media screen and (min-width: 1080px) {
   // Home Section
   .home {
     position: relative;
@@ -857,9 +879,9 @@ h2 {
 
   .subscribe {
     .sectionContainer {
+        
       .inputDiv {
         justify-content: space-between;
-
         .btn {
           max-width: max-content;
         }
@@ -886,3 +908,38 @@ h2 {
     }
   }
 }
+
+@media screen and (min-width: 1800px) {
+
+  // Support Section
+  .support {
+    .sectionContainer {
+      .infoDiv {
+        .imgDiv {
+          margin-left: 35rem;
+        }
+      }
+    }
+  }
+
+  // Footer Section
+  .footer {
+    .sectionContainer {
+      grid-template-columns: repeat(3, 1fr);
+
+      .footerLinks {
+        justify-content: center;
+      }
+      .footerLinks:nth-child(2) {
+        margin-right: -1400px; 
+      }
+
+      .footerLinks:nth-child(3) {
+        margin-right: -500px;
+        margin-top: -56px;
+      }
+    }
+  }
+}
+
+

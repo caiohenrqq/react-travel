@@ -645,7 +645,17 @@ h2 {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 570px) {
+  .home {
+    padding-top: 12rem;
+  }
+  .support .sectionContainer .infoDiv .imgDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1080px) {
   .home {
     position: relative;
     padding-top: 12rem;
@@ -709,6 +719,24 @@ h2 {
   }
   .footer .sectionContainer .footerLinks:nth-child(3) {
     margin-right: -350px;
+    margin-top: -56px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .support .sectionContainer .infoDiv .imgDiv {
+    margin-left: 35rem;
+  }
+  .footer .sectionContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .sectionContainer .footerLinks {
+    justify-content: center;
+  }
+  .footer .sectionContainer .footerLinks:nth-child(2) {
+    margin-right: -1400px;
+  }
+  .footer .sectionContainer .footerLinks:nth-child(3) {
+    margin-right: -500px;
     margin-top: -56px;
   }
 }/*# sourceMappingURL=main.css.map */
