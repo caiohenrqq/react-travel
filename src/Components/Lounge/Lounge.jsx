@@ -1,19 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import loungeimg from '../../Components/assets/loungeImg.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Lounge = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
+  
   return (
     <div className='lounge container section'>
       <div className="sectionContainer grids">
-        <div className="imgDiv">
+        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
           <img src={loungeimg} />
         </div>
 
         <div className="textDiv">
-          <h2>Assistência no Aeroporto</h2>
+          <h2 data-aos="fade-down" data-aos-duration="2500" >Assistência no Aeroporto</h2>
 
           <div className="grids grids">
-          <div className="singleGrid">
+          <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">
             <span className="gridTitle">
               Check-in Assistido
             </span>
@@ -22,7 +29,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">
             <span className="gridTitle">
               Lounge Exclusivo
             </span>
@@ -31,7 +38,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">
             <span className="gridTitle">
               Acompanhamento Personalizado
             </span>
@@ -40,7 +47,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos="fade-down" data-aos-duration="2500" className="singleGrid">
             <span className="gridTitle">
               Transferência Confortável
             </span>

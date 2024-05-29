@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import pessoa1 from '../../Components/assets/pessoa1.png'
   import pessoa1bg from '../../Components/assets/pessoa1bg.jpg'
@@ -8,6 +8,9 @@ import pessoa3 from '../../Components/assets/pessoa3.png'
   import pessoa3bg from '../../Components/assets/pessoa3bg.jpg'
 import pessoa4 from '../../Components/assets/pessoa4.png'
   import pessoa4bg from '../../Components/assets/pessoa4bg.jpg'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const travelers = [
@@ -47,10 +50,15 @@ const travelers = [
 
 
 function Travelers() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <div className='travelers container section'>
       <div className="sectionContainer">
-        <h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">
           Avaliações de Clientes
         </h2>
 
@@ -60,7 +68,7 @@ function Travelers() {
             {
               travelers.map(({id, bgPessoa, imgPessoa, nomePessoa, socialPessoa, avaliacao})=>{
                   return(
-                    <div key={id} className="singleTraveler">
+                    <div data-aos="fade-up" data-aos-duration="2500" key={id} className="singleTraveler">
 
                     <img src={bgPessoa} className='destinationImage'/>
                     

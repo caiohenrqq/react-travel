@@ -127,34 +127,10 @@ h2 {
   width: 100%;
   z-index: 1000;
 
-  .navBarOne,
   .navBarTwo {
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-  }
-
-  .navBarOne {
-    background: var(--corSecundaria);
-
-    .icon:hover {
-      color: var(--corPrimaria);
-    }
-
-    .atb {
-      gap: 1rem;
-
-      span {
-        color: var(--corPreta);
-        font-size: 13px;
-        cursor: pointer;
-
-        &:hover {
-          color: var(--corPrimaria);
-          font-size: 700;
-        }
-      }
-    }
   }
 
   .navBarTwo {
@@ -178,6 +154,8 @@ h2 {
     }
 
     @media screen and (max-width: 768px) {
+
+
       .toggleIcon {
         display: inline;
       }
@@ -561,7 +539,6 @@ h2 {
         overflow: hidden;
         border-radius: 10rem;
         gap: 1rem;
-        border: 2px solid var(--cinzaTexto);
         margin: auto;
         margin-bottom: 1.5rem;
 
@@ -771,7 +748,7 @@ h2 {
 
 // Media Screen Section
 @media screen and (min-width: 570px) {
-
+  
   // Home Section
   .home {
     padding-top: 12rem;
@@ -795,14 +772,7 @@ h2 {
 
 @media screen and (min-width: 1080px) {
   // Home Section
-  .home {
-    position: relative;
-    padding-top: 7rem;
 
-    .homeImagens {
-      width: 40%;
-    }
-  }
 
   // Search Section
   .search {
@@ -823,6 +793,7 @@ h2 {
 
   // Support Section
   .support {
+    
     .sectionContainer {
       .infoDiv {
         display: flex;
@@ -891,6 +862,7 @@ h2 {
 
   // Footer Section
   .footer {
+    overflow-x: hidden;
     .sectionContainer {
       grid-template-columns: repeat(3, 1fr);
 
@@ -924,6 +896,7 @@ h2 {
 
   // Footer Section
   .footer {
+    overflow-x: hidden;
     .sectionContainer {
       grid-template-columns: repeat(3, 1fr);
 

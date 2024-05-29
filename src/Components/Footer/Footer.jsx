@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import logo from '../assets/jiturlg.png'
 import { TiSocialFacebook } from "react-icons/ti";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa6";
 
 function Footer() {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
   return (
     <div className='footer'>
       <div className="sectionContainer container grid">
-        <div className="gridOne">
+        <div className="gridOne" data-aos="fade-up" data-aos-duration="2500">
           <div className="logoDiv">
             <img src={logo} className='logo' />
           </div>
@@ -20,7 +25,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footerLinks">
+        <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
           <span className="linkTitle">
             Informação
           </span>
@@ -38,7 +43,7 @@ function Footer() {
           </li>
         </div>
 
-        <div className="footerLinks">
+        <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
           <span className="linkTitle">
             Guia Rápido
           </span>

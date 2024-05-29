@@ -117,29 +117,10 @@ h2 {
   width: 100%;
   z-index: 1000;
 }
-.navBar .navBarOne,
 .navBar .navBarTwo {
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
-}
-.navBar .navBarOne {
-  background: var(--corSecundaria);
-}
-.navBar .navBarOne .icon:hover {
-  color: var(--corPrimaria);
-}
-.navBar .navBarOne .atb {
-  gap: 1rem;
-}
-.navBar .navBarOne .atb span {
-  color: var(--corPreta);
-  font-size: 13px;
-  cursor: pointer;
-}
-.navBar .navBarOne .atb span:hover {
-  color: var(--corPrimaria);
-  font-size: 700;
 }
 .navBar .navBarTwo {
   display: flex;
@@ -468,7 +449,6 @@ h2 {
   overflow: hidden;
   border-radius: 10rem;
   gap: 1rem;
-  border: 2px solid var(--cinzaTexto);
   margin: auto;
   margin-bottom: 1.5rem;
 }
@@ -656,13 +636,6 @@ h2 {
   }
 }
 @media screen and (min-width: 1080px) {
-  .home {
-    position: relative;
-    padding-top: 7rem;
-  }
-  .home .homeImagens {
-    width: 40%;
-  }
   .search .sectionContainer .btns {
     width: 15rem;
   }
@@ -708,6 +681,9 @@ h2 {
     max-width: -moz-max-content;
     max-width: max-content;
   }
+  .footer {
+    overflow-x: hidden;
+  }
   .footer .sectionContainer {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -725,6 +701,9 @@ h2 {
 @media screen and (min-width: 1800px) {
   .support .sectionContainer .infoDiv .imgDiv {
     margin-left: 35rem;
+  }
+  .footer {
+    overflow-x: hidden;
   }
   .footer .sectionContainer {
     grid-template-columns: repeat(3, 1fr);
