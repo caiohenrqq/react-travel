@@ -395,7 +395,7 @@ h2 {
   gap: 1rem;
   text-align: center;
   margin: auto;
-  height: 320px;
+  height: 380px;
   width: 90%;
   max-width: 350px;
   display: flex;
@@ -472,7 +472,9 @@ h2 {
   margin: auto;
   margin-bottom: 1.5rem;
 }
-.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage,
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage,
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
   position: absolute;
 }
 .travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage {
@@ -660,5 +662,53 @@ h2 {
   }
   .search .sectionContainer .searchInputs button {
     justify-content: center;
+  }
+  .support .sectionContainer .infoDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 1rem;
+  }
+  .support .sectionContainer .infoDiv .imgDiv {
+    width: 50%;
+    padding-left: 12rem;
+  }
+  .info .infoContainer .titleDiv h2 {
+    max-width: 500px;
+  }
+  .info .infoContainer .cardsDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .lounge .sectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .subscribe .sectionContainer .inputDiv {
+    justify-content: space-between;
+  }
+  .subscribe .sectionContainer .inputDiv .btn {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .footer .sectionContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .sectionContainer .footerLinks {
+    justify-content: center;
+  }
+  .footer .sectionContainer .footerLinks:nth-child(2) {
+    margin-right: -1050px;
+  }
+  .footer .sectionContainer .footerLinks:nth-child(3) {
+    margin-right: -350px;
+    margin-top: -56px;
   }
 }/*# sourceMappingURL=main.css.map */
