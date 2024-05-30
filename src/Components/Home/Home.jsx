@@ -16,9 +16,10 @@ const Home = () => {
   return (
     <div className="home flex container">
       <div className="mainText">
-        <h1 data-aos="fade-up" data-aos-duration="2500">
-          Crie Memórias Inesquecíveis Que Durarão Para Sempre!
-        </h1>
+      <h1 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="50">
+        Crie Memórias Inesquecíveis Que Durarão Para Sempre!
+      </h1>
+
         <FaLongArrowAltDown
           data-aos="fade-up"
           data-aos-duration="5000"

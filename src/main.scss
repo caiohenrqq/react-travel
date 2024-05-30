@@ -883,7 +883,13 @@ h2 {
 }
 
 @media screen and (min-width: 1800px) {
+  // Home Section
 
+  .home {
+    .homeImagens {
+      max-width: 50%;
+    }
+  }
   // Support Section
   .support {
     .sectionContainer {

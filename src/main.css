@@ -704,6 +704,9 @@ h2 {
   }
 }
 @media screen and (min-width: 1800px) {
+  .home .homeImagens {
+    max-width: 50%;
+  }
   .support .sectionContainer .infoDiv .imgDiv {
     margin-left: 35rem;
   }
