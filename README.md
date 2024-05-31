@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do site da Jitur, uma agência de viagens que oferece uma variedade de pacotes e ofertas de viagens. Este projeto está atualmente em desenvolvimento.
 
-[iPhone-13-PRO-react-travel-five.vercel.app-_-0jtDr7n-.webm](https://github.com/caiohenrqq/react-travel/assets/99412837/507326cb-4877-4176-8790-d9b4a0a92573)
+![gif](https://github.com/caiohenrqq/react-travel/assets/99412837/d93c4700-bce4-4e39-8efd-1156a44a855b)
 
 ## Funcionalidades
 
