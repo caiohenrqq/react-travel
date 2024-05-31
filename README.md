@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do site da Jitur, uma agência de viagens que oferece uma variedade de pacotes e ofertas de viagens. Este projeto está atualmente em desenvolvimento.
 
-![Jitur _ Turismo](https://github.com/caiohenrqq/react-travel/assets/99412837/476b44dd-d91b-408e-a870-fe4e76f3a727)
+![react-travel](https://github.com/caiohenrqq/react-travel/assets/99412837/9a76bf2e-c2d7-4807-ace9-eddad572dda4)
 
 ## Funcionalidades
 
