@@ -79,10 +79,10 @@ window.addEventListener('scroll', addBgColor)
         <div className={active}>
           <ul className="menu flex">
             <li onClick={removeNavBar} className="listItem">Início</li>
-            <li onClick={removeNavBar} className="listItem">Sobre</li>
+            <li onClick={removeNavBar} className="listItem">Suporte</li>
             <li onClick={removeNavBar} className="listItem">Ofertas</li>
-            <li onClick={removeNavBar} className="listItem">Assentos</li>
-            <li onClick={removeNavBar} className="listItem">Destinos</li>
+            <li onClick={removeNavBar} className="listItem">Assistência</li>
+            <li onClick={removeNavBar} className="listItem">Avaliações</li>
           </ul>
           <div className={mobile}>
             <Contato />
