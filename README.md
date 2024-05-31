@@ -15,9 +15,8 @@ Bem-vindo ao repositório do site da Jitur, uma agência de viagens que oferece 
 
 ## Tecnologias Utilizadas
 
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **API do Google Maps**
+- **SCSS**
+- **AOS - Animation On Scroll**
+- **React**
 
 ## Desenvolvido por henrqq, exclusivamente para Jitur
