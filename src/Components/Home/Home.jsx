@@ -14,27 +14,29 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home flex container">
-      <div className="mainText">
-      <h1 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="50">
-        Crie Memórias Inesquecíveis Que Durarão Para Sempre!
-      </h1>
+    <section id="home">
+      <div className="home flex container">
+        <div className="mainText">
+        <h1 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="50">
+          Crie Memórias Inesquecíveis Que Durarão Para Sempre!
+        </h1>
 
-        <FaLongArrowAltDown
-          data-aos="fade-up"
-          data-aos-duration="5000"
-          className="icon"
-        />
-      </div>
-
-      <div className="homeImagens flex">
-        <div className="videoDiv">
-          <video src={video} autoPlay muted loop className="video"></video>
+          <FaLongArrowAltDown
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            className="icon"
+          />
         </div>
 
-        <img src={aviao} className="aviao" />
+        <div className="homeImagens flex">
+          <div className="videoDiv">
+            <video src={video} autoPlay muted loop className="video"></video>
+          </div>
+
+          <img src={aviao} className="aviao" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -12,6 +12,7 @@ function Info() {
   }, [])
 
   return (
+    <section id="explorar">
     <div className='info section'>
       <div className="infoContainer container">
         <div className="titleDiv flex">
@@ -54,6 +55,7 @@ function Info() {
         </div>
       </div>
     </div>
+    </section>
   )   
 }
 

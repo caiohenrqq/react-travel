@@ -1,13 +1,13 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 import pessoa1 from '../../Components/assets/pessoa1.png'
-  import pessoa1bg from '../../Components/assets/pessoa1bg.jpg'
+import pessoa1bg from '../../Components/assets/pessoa1bg.jpg'
 import pessoa2 from '../../Components/assets/pessoa2.png'
-  import pessoa2bg from '../../Components/assets/pessoa2bg.jpg'
+import pessoa2bg from '../../Components/assets/pessoa2bg.jpg'
 import pessoa3 from '../../Components/assets/pessoa3.png'
-  import pessoa3bg from '../../Components/assets/pessoa3bg.jpg'
+import pessoa3bg from '../../Components/assets/pessoa3bg.jpg'
 import pessoa4 from '../../Components/assets/pessoa4.png'
-  import pessoa4bg from '../../Components/assets/pessoa4bg.jpg'
+import pessoa4bg from '../../Components/assets/pessoa4bg.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -52,29 +52,30 @@ const travelers = [
 function Travelers() {
 
   useEffect(() => {
-    AOS.init({duration: 2000})
+    AOS.init({ duration: 2000 })
   }, [])
 
   return (
-    <div className='travelers container section'>
-      <div className="sectionContainer">
-        <h2 data-aos="fade-down" data-aos-duration="2500">
-          Avaliações de Clientes
-        </h2>
+    <section id="avaliacoes">
+      <div className='travelers container section'>
+        <div className="sectionContainer">
+          <h2 data-aos="fade-down" data-aos-duration="2500">
+            Avaliações de Clientes
+          </h2>
 
-        <div className="travelersContainer grids">
-          {/* Card Passageiro */}
+          <div className="travelersContainer grids">
+            {/* Card Passageiro */}
 
             {
-              travelers.map(({id, bgPessoa, imgPessoa, nomePessoa, socialPessoa, avaliacao})=>{
-                  return(
-                    <div data-aos="fade-up" data-aos-duration="2500" key={id} className="singleTraveler">
+              travelers.map(({ id, bgPessoa, imgPessoa, nomePessoa, socialPessoa, avaliacao }) => {
+                return (
+                  <div data-aos="fade-up" data-aos-duration="2500" key={id} className="singleTraveler">
 
-                    <img src={bgPessoa} className='destinationImage'/>
-                    
+                    <img src={bgPessoa} className='destinationImage' />
+
                     <div className="travelerDetails">
                       <div className="travelerPicture">
-                        <img src={imgPessoa} className='travelerImage'/>
+                        <img src={imgPessoa} className='travelerImage' />
                       </div>
                       <div className="travelerName">
                         <span>{nomePessoa}</span>
@@ -82,15 +83,16 @@ function Travelers() {
                         <p className='avaliacao'>{avaliacao}</p>
                       </div>
                     </div>
-        
+
                   </div>
-                  )
-                }
+                )
+              }
               )
             }
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
