@@ -774,6 +774,12 @@ h2 {
 }
 
 @media screen and (min-width: 1080px) {
+    // Home Section 
+    .home {
+      .homeImagens {
+        max-width: 40%;
+      }
+    }
 
   // Search Section
   .search {

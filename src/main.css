@@ -641,6 +641,9 @@ h2 {
   }
 }
 @media screen and (min-width: 1080px) {
+  .home .homeImagens {
+    max-width: 40%;
+  }
   .search .sectionContainer .btns {
     width: 15rem;
   }
