@@ -61,11 +61,14 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      removeNavBar();
     }
   };
 
   return (
     <div className='navBar flex'>
+      
+    {/* Login/Registrar */}
       {/* <div className="navBarOne flex">
         <div>
           <SiConsul className='icon'/>
