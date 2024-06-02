@@ -12,7 +12,7 @@ import Home from '../Support/Support.jsx';
 
 const Navbar = () => {
 
-  
+
   const [active, setActive] = useState('navBarMenu');
   const [isNavBarShown, setIsNavBarShown] = useState(false);
 
@@ -59,16 +59,25 @@ const Navbar = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (section && isMobile) {
+      section.scrollIntoView({ 
+        behavior: "smooth",
+        block: 'start',
+      });
+      removeNavBar();
+    } else {
+      section.scrollIntoView({ 
+        behavior: "smooth",
+        block: 'center',
+      });
       removeNavBar();
     }
   };
 
   return (
     <div className='navBar flex'>
-      
-    {/* Login/Registrar */}
+
+      {/* Login/Registrar */}
       {/* <div className="navBarOne flex">
         <div>
           <SiConsul className='icon'/>
