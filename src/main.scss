@@ -1,7 +1,5 @@
-// Font Setup | Inter
+// Font Setup 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-//
 
 * {
   padding: 0;
@@ -11,7 +9,7 @@
 }
 
 :root {
-  --corPrimaria: hsl(225, 50%, 48%);
+  --corPrimaria: hsl(228, 4%, 26%);
   --corSecundaria: hsl(180, 17%, 95%);
   --corUm: hsl(15, 74%, 70%);
   --corDois: hsl(28, 100%, 82%);
@@ -272,6 +270,35 @@ h2 {
       position: absolute;
       width: 90%;
       top: 11%;
+    }
+  }
+}
+
+.empresas {
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+  overflow: hidden;
+
+  h2 {
+    color: var(--cinzaTexto);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2.5rem;
+  }
+
+  .logo {
+    width: 30%;
+    padding-top: 2.5rem;
+    filter: grayscale(100%); 
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.5s, filter 0.5s; 
+    
+    &:hover {
+      filter: grayscale(50%); 
+      opacity: 1; 
+      transform: scale(1.1); 
+      transition: transform 0.5s, opacity 0.5s, filter 0.5s; 
     }
   }
 }

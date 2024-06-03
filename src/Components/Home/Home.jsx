@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import { FaLongArrowAltDown } from "react-icons/fa";
 // Assets
 import video from "../assets/horizon.mp4";
 import aviao from "../assets/aviao.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import Empresas from "./Empresas";
 
 const Home = () => {
   // UseEffect para setar animação
@@ -20,12 +21,6 @@ const Home = () => {
         <h1 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="50">
           Crie Memórias Inesquecíveis Que Durarão Para Sempre!
         </h1>
-
-          <FaLongArrowAltDown
-            data-aos="fade-up"
-            data-aos-duration="5000"
-            className="icon"
-          />
         </div>
 
         <div className="homeImagens flex">
@@ -36,6 +31,7 @@ const Home = () => {
           <img src={aviao} className="aviao" />
         </div>
       </div>
+      <Empresas />
     </section>
   );
 };
