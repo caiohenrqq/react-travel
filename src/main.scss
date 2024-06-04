@@ -9,7 +9,7 @@
 }
 
 :root {
-  --corPrimaria: hsl(228, 4%, 26%);
+  --corPrimaria: hsl(228, 98%, 20%);
   --corSecundaria: hsl(180, 17%, 95%);
   --corUm: hsl(15, 74%, 70%);
   --corDois: hsl(28, 100%, 82%);
@@ -270,35 +270,6 @@ h2 {
       position: absolute;
       width: 90%;
       top: 11%;
-    }
-  }
-}
-
-.empresas {
-  text-align: center;
-  gap: 2rem;
-  flex-direction: column;
-  overflow: hidden;
-
-  h2 {
-    color: var(--cinzaTexto);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2.5rem;
-  }
-
-  .logo {
-    width: 30%;
-    padding-top: 2.5rem;
-    filter: grayscale(100%); 
-    opacity: 0.8;
-    transition: transform 0.5s, opacity 0.5s, filter 0.5s; 
-    
-    &:hover {
-      filter: grayscale(50%); 
-      opacity: 1; 
-      transform: scale(1.1); 
-      transition: transform 0.5s, opacity 0.5s, filter 0.5s; 
     }
   }
 }
@@ -701,12 +672,27 @@ h2 {
 // Footer Section
 
 .footer {
+    .logoSlider {
+      margin-top: -75px;
+      padding-top: 2.5rem;
+      filter: grayscale(100%); 
+      opacity: 0.3;
+      transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+      
+      &:hover {
+        filter: grayscale(10%); 
+        opacity: 1; 
+        transform: scale(1.1); 
+        transition: transform 0.5s, opacity 0.5s, filter 0.5s; 
+      }
+    }
+
   overflow-x: hidden;
   background: var(--corSecundaria);
   padding-top: 2rem;
+
   .sectionContainer {
     gap: 2.5rem;
-
     .gridOne {
       gap: 1rem;
       justify-content: left;
@@ -898,15 +884,7 @@ h2 {
       grid-template-columns: repeat(3, 1fr);
 
       .footerLinks {
-        justify-content: center;
-      }
-      .footerLinks:nth-child(2) {
-        margin-right: -1050px;
-      }
-
-      .footerLinks:nth-child(3) {
-        margin-right: -350px;
-        margin-top: -56px;
+        justify-content: right;
       }
     }
   }
@@ -936,18 +914,6 @@ h2 {
     overflow-x: hidden;
     .sectionContainer {
       grid-template-columns: repeat(3, 1fr);
-
-      .footerLinks {
-        justify-content: center;
-      }
-      .footerLinks:nth-child(2) {
-        margin-right: -1400px;
-      }
-
-      .footerLinks:nth-child(3) {
-        margin-right: -500px;
-        margin-top: -56px;
-      }
     }
   }
 }

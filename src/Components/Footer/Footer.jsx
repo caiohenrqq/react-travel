@@ -5,6 +5,7 @@ import logo from '../assets/jiturlg.png'
 import { TiSocialFacebook } from "react-icons/ti";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa6";
+import Empresas from '../Footer/Empresas.jsx';
 
 function Footer() {
   useEffect(() => {
@@ -12,6 +13,9 @@ function Footer() {
   }, [])
   return (
     <div className='footer'>
+      <div data-aos="fade-up" data-aos-duration="2500">
+        <Empresas />
+      </div>
       <div className="sectionContainer container grid">
         <div className="gridOne" data-aos="fade-up" data-aos-duration="2500">
           <div className="logoDiv">

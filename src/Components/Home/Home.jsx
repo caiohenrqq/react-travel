@@ -6,7 +6,7 @@ import aviao from "../assets/aviao.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Empresas from "./Empresas";
+import Empresas from "../Footer/Empresas";
 
 const Home = () => {
   // UseEffect para setar animação
@@ -31,7 +31,6 @@ const Home = () => {
           <img src={aviao} className="aviao" />
         </div>
       </div>
-      <Empresas />
     </section>
   );
 };

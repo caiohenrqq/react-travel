@@ -7,7 +7,7 @@
 }
 
 :root {
-  --corPrimaria: hsl(228, 4%, 26%);
+  --corPrimaria: hsl(228, 98%, 20%);
   --corSecundaria: hsl(180, 17%, 95%);
   --corUm: hsl(15, 74%, 70%);
   --corDois: hsl(28, 100%, 82%);
@@ -236,32 +236,6 @@ h2 {
   position: absolute;
   width: 90%;
   top: 11%;
-}
-
-.empresas {
-  text-align: center;
-  gap: 2rem;
-  flex-direction: column;
-  overflow: hidden;
-}
-.empresas h2 {
-  color: var(--cinzaTexto);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 2.5rem;
-}
-.empresas .logo {
-  width: 30%;
-  padding-top: 2.5rem;
-  filter: grayscale(100%);
-  opacity: 0.8;
-  transition: transform 0.5s, opacity 0.5s, filter 0.5s;
-}
-.empresas .logo:hover {
-  filter: grayscale(50%);
-  opacity: 1;
-  transform: scale(1.1);
-  transition: transform 0.5s, opacity 0.5s, filter 0.5s;
 }
 
 .search .sectionContainer {
@@ -597,6 +571,19 @@ h2 {
   background: var(--corSecundaria);
   padding-top: 2rem;
 }
+.footer .logoSlider {
+  margin-top: -75px;
+  padding-top: 2.5rem;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+}
+.footer .logoSlider:hover {
+  filter: grayscale(10%);
+  opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+}
 .footer .sectionContainer {
   gap: 2.5rem;
 }
@@ -725,14 +712,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer .sectionContainer .footerLinks {
-    justify-content: center;
-  }
-  .footer .sectionContainer .footerLinks:nth-child(2) {
-    margin-right: -1050px;
-  }
-  .footer .sectionContainer .footerLinks:nth-child(3) {
-    margin-right: -350px;
-    margin-top: -56px;
+    justify-content: right;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -747,15 +727,5 @@ h2 {
   }
   .footer .sectionContainer {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .footer .sectionContainer .footerLinks {
-    justify-content: center;
-  }
-  .footer .sectionContainer .footerLinks:nth-child(2) {
-    margin-right: -1400px;
-  }
-  .footer .sectionContainer .footerLinks:nth-child(3) {
-    margin-right: -500px;
-    margin-top: -56px;
   }
 }/*# sourceMappingURL=main.css.map */
