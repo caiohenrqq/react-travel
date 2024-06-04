@@ -655,6 +655,12 @@ h2 {
   .lounge {
     overflow-x: hidden;
   }
+  .empresas .logoSlider {
+    margin-top: -60px;
+  }
+  .footer {
+    overflow-y: hidden;
+  }
 }
 @media screen and (min-width: 1080px) {
   .home .homeImagens {

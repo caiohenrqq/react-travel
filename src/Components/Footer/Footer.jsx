@@ -13,7 +13,7 @@ function Footer() {
   }, [])
   return (
     <div className='footer'>
-      <div data-aos="fade-up" data-aos-duration="2500">
+      <div className='logoS' data-aos="fade-up" data-aos-duration="2500">
         <Empresas />
       </div>
       <div className="sectionContainer container grid">
@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
+        <div data-aos="fade-up" data-aos-duration="500" className="footerLinks">
           <span className="linkTitle">
             Informação
           </span>
@@ -47,7 +47,7 @@ function Footer() {
           </li>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
+        <div data-aos="fade-up" data-aos-duration="500" className="footerLinks">
           <span className="linkTitle">
             Guia Rápido
           </span>

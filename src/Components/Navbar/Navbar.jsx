@@ -31,7 +31,6 @@ const Navbar = () => {
   };
 
   // Verifica se é Mobile (768px)
-
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   let mobile = 'contatoMobile';
