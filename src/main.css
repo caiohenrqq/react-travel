@@ -661,6 +661,9 @@ h2 {
   .footer {
     overflow-y: hidden;
   }
+  .footer .sectionContainer {
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 1080px) {
   .home .homeImagens {
@@ -675,6 +678,23 @@ h2 {
   }
   .search .sectionContainer .searchInputs button {
     justify-content: center;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts {
+    display: flex;
+    flex-direction: column;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .checkout {
+    display: flex;
+    align-items: center;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .checkout h4 {
+    white-space: nowrap;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .inputCheckOut {
+    background: var(--cinzaBg);
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .inputCheckOut.checked {
+    background: var(--corBranca);
   }
   .support .sectionContainer .infoDiv {
     display: flex;

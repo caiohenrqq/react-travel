@@ -793,6 +793,9 @@ h2 {
   }
   // Footer Section
   .footer {
+    .sectionContainer {
+      margin-top: 10px;
+    }
     overflow-y: hidden;
   }
   
@@ -813,11 +816,39 @@ h2 {
         width: 15rem;
       }
       .searchInputs {
+        
         display: grid;
         grid-template-columns: repeat(5, 1fr);
 
         button {
           justify-content: center;
+        }
+        
+        .singleInput {
+          .texts {
+            display: flex;
+            flex-direction: column;
+            
+            .checkout {
+              display: flex;
+              align-items: center;
+              
+
+              h4 {
+                white-space: nowrap;
+              }
+              .checkbox {
+              }
+            }
+
+            .inputCheckOut {
+              background: var(--cinzaBg);
+            }
+            
+            .inputCheckOut.checked {
+              background: var(--corBranca);
+            }
+          }
         }
       }
     }

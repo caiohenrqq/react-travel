@@ -7,9 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Search = () => {
-
-  
   const [activeButton, setActiveButton] = useState(null);
+  const [isChecked, setIsChecked] = useState(false);
 
   const handleClick = (buttonName) => {
     if (activeButton === buttonName) {
@@ -19,31 +18,18 @@ const Search = () => {
     }
   };
 
-    // UseEffect para setar animação
-    useEffect(() => {
-      AOS.init({duration: 2000})
-    }, [])
+  // UseEffect para setar animação
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
 
+  const validarCheckBox = (event) => {
+    setIsChecked(event.target.checked);
+  }
 
   return (
     <div data-aos="fade-up" data-aos-duration="2500" className="search container section">
       <div className="sectionContainer">
-        {/* <div className="btns flex">
-          <div 
-            className={`singleBtn ${activeButton === 'economica' ? 'active' : ''}`} 
-            onClick={() => handleClick('economica')}
-          >
-            <span>Ônibus</span>
-          </div>
-
-          <div 
-            className={`singleBtn ${activeButton === 'primeira' ? 'active' : ''}`} 
-            onClick={() => handleClick('primeira')}
-          >
-            <span>Avião</span>
-          </div>
-        </div> */}
-
         <div className="searchInputs flex">
           <div className="singleInput flex">
             <div className="iconDiv">
@@ -71,7 +57,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Check-in</h4>
-              <input type="text" placeholder="Qual sua data de ida?" />
+              <input type="text" checked={isChecked} placeholder="Qual sua data de ida?" />
             </div>
           </div>
 
@@ -80,8 +66,11 @@ const Search = () => {
               <RxCalendar className="icon" />
             </div>
             <div className="texts">
-              <h4>Check-out</h4>
-              <input type="text" placeholder="Qual sua data de volta?" />
+              <div className="checkout">
+                <h4>Check-out</h4>
+                <input type="checkbox" className="checkbox" onChange={validarCheckBox} />
+              </div>
+              <input type="text" placeholder="Qual sua data de volta?" className={isChecked ? "inputCheckOut checked" : "inputCheckOut"} disabled={!isChecked} />
             </div>
           </div>
 
