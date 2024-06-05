@@ -9,10 +9,11 @@ const Empresas = () => {
   return (
     <div className="empresas">
     <Slider
-    width={isMobile ? '100px' : '250px'}
-    duration={40}
+    width={isMobile ? '100px' : '150px'}
+    duration={100}
     pauseOnHover={true}
-    blurBoderColor={'#fff'}
+    blurBorders={true}
+    blurBoderColor={'#f0f4f4'}
     >
     <Slider.Slide>
         <img src={logocvc} alt="any" className='logoSlider' />

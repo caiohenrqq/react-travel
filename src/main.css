@@ -715,6 +715,7 @@ h2 {
     overflow-x: hidden;
   }
   .footer .sectionContainer {
+    margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
   .footer .sectionContainer .footerLinks {
@@ -732,6 +733,7 @@ h2 {
     overflow-x: hidden;
   }
   .footer .sectionContainer {
+    margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
