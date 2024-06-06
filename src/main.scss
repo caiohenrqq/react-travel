@@ -767,6 +767,42 @@ h2 {
     padding-top: 12rem;
   }
 
+  // Search Section
+  .search {
+    .sectionContainer {
+      .btns {
+      }
+      .searchInputs {
+
+        button {
+        }
+        
+        .singleInput {
+          .texts {
+            
+            .checkout {
+              display: flex; 
+              align-items: center;
+              h4 {
+                white-space: nowrap
+              }
+              .checkbox {
+
+              }
+            }
+
+            .inputCheckOut {
+            }
+            
+            .inputCheckOut.checked {
+            }
+          }
+        }
+      }
+    }
+  }
+  .sectionContainer section
+
   // Support Section
   .support {
     .sectionContainer {
