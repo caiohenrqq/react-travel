@@ -647,6 +647,9 @@ h2 {
   .home {
     padding-top: 12rem;
   }
+  .search {
+    margin-left: 18px;
+  }
   .search .sectionContainer .searchInputs .singleInput .texts .checkout {
     display: flex;
     align-items: center;
