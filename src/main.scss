@@ -793,9 +793,11 @@ h2 {
             }
 
             .inputCheckOut {
+              background: var(--cinzaBg);
             }
             
             .inputCheckOut.checked {
+              background: var(--corBranca);
             }
           }
         }

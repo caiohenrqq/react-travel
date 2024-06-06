@@ -657,6 +657,12 @@ h2 {
   .search .sectionContainer .searchInputs .singleInput .texts .checkout h4 {
     white-space: nowrap;
   }
+  .search .sectionContainer .searchInputs .singleInput .texts .inputCheckOut {
+    background: var(--cinzaBg);
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts .inputCheckOut.checked {
+    background: var(--corBranca);
+  }
   .sectionContainer section .support .sectionContainer .infoDiv .imgDiv {
     display: flex;
     flex-direction: column;
